@@ -1,38 +1,27 @@
-const base =
-    (import.meta.env && import.meta.env.BASE_URL) !== undefined
-        ? import.meta.env.BASE_URL
-        : "/usefull-things-182-slider/";
-
-import img1 from `${base}src/assets/images/img1.jpg`;
-import img2 from `${base}src/assets/images/img2.jpg`;
-import img3 from `${base}src/assets/images/img3.jpg`;
-import img4 from `${base}src/assets/images/img4.jpg`;
-import img5 from `${base}src/assets/images/img5.jpg`;
-
 const slides = [
     {
         title: "Wings's Night",
-        image: img1,
+        image: "./src/assets/images/img1.jpg",
         url: "https://www.google.com",
     },
     {
         title: "Bold Dreams",
-        image: img2,
+        image: "./src/assets/images/img2.jpg",
         url: "https://www.google.com",
     },
     {
         title: "Shards's Flowers",
-        image: img3,
+        image: "./src/assets/images/img3.jpg",
         url: "https://www.google.com",
     },
     {
         title: "Silk in the Pirates",
-        image: img4,
+        image: "./src/assets/images/img4.jpg",
         url: "https://www.google.com",
     },
     {
         title: "Growing Ashes",
-        image: img5,
+        image: "./src/assets/images/img5.jpg",
         url: "https://www.google.com",
     },
 ];
