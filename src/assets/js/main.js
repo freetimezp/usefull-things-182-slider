@@ -1,10 +1,4 @@
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Lenis from "lenis";
-
-import slides from "./slides";
-
-//console.log(slides);
+import slides from "./slides.js";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -61,7 +55,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         slideImages.appendChild(imgContainer);
-        //console.log(slideImages);
     }
 
     const transitionCount = totalSlides - 1;
@@ -191,8 +184,6 @@ document.addEventListener("DOMContentLoaded", () => {
         scrub: 1,
         invalidateOnRefresh: true,
         onUpdate: (self) => {
-            //console.log("Scroll progress:", self.progress);
-
             const imageProgress = calculateImageProgress(self.progress);
 
             if (typeof imageProgress === "number") {
