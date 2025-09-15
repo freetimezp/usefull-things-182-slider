@@ -1,8 +1,13 @@
-import img1 from "/src/assets/images/img1.jpg";
-import img2 from "/src/assets/images/img2.jpg";
-import img3 from "/src/assets/images/img3.jpg";
-import img4 from "/src/assets/images/img4.jpg";
-import img5 from "/src/assets/images/img5.jpg";
+const base =
+    (import.meta.env && import.meta.env.BASE_URL) !== undefined
+        ? import.meta.env.BASE_URL
+        : "/usefull-things-182-slider/";
+
+import img1 from `${base}src/assets/images/img1.jpg`;
+import img2 from `${base}src/assets/images/img2.jpg`;
+import img3 from `${base}src/assets/images/img3.jpg`;
+import img4 from `${base}src/assets/images/img4.jpg`;
+import img5 from `${base}src/assets/images/img5.jpg`;
 
 const slides = [
     {
